@@ -110,7 +110,7 @@ h2 {
 .imagen-colum-3 img{
   padding: 0px;
   height: 230px;
-  max-width: 360px;
+  max-width:50;
 }
 .price-container{
   padding: 20px;
@@ -185,6 +185,7 @@ h2 {
 
 .colum3 {
   position: relative; /* el contenedor padre tiene position relative */
+  width: 350px;
 }
 
 .contenido-colum-3 {
@@ -221,8 +222,9 @@ h2 {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-gap: 10px;
   width: 100%;
+  padding: 20px;
 }
 @media (max-width: 2000px) {
   .grid-container {
