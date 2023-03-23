@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+:root{
+    --bg-color: #fff;
+    --text-color: #666;
+    --main-color: #000000;
+    --op-color:rgba(0,0,0,0.15);
+}
+
+#content{
+    overflow: hidden;
+}
+
+#back-button {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    color: var(--main-color);
+    cursor: pointer;
+    outline: none;
+    padding: 0.5rem 1rem;
+    margin: 20px 0 0 20px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    animation: slide-up 1s ease-in-out;
+    transform-origin: bottom;
+  }
+  
+  @keyframes slide-up {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+
+  #back-button i {
+    font-size: 1.3em;
+    vertical-align: middle;
+  }
+  
+  #back-button span {
+    font-size: 1.3em;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+
+  #back-button:hover {
+    transform: scale(1.05);
+  }
+  
+
+  form {
+    display: flex;
+    flex-direction: column;
+    animation: slide-up 1s ease-in-out;
+    transform-origin: bottom;
+  }
+  @keyframes slide-up {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+  
+  label,
+  input,
+  p,
+  a,
+  button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  #content {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-top: 50px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+  p {
+    margin-bottom: 0;
+    color: var(--text-color);
+    
+  }
+  input:not(:last-child) {
+    margin-bottom: 0;
+}
+  input{
+    margin-top: 2rem;
+    display: flex;
+    background-color: #f2f2f2;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    color: var(--main-color);
+    cursor: pointer;
+    outline: none;
+    padding: 0.625rem 1rem;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    line-height: 1.4rem;
+    border: var(--main-color) solid 2px;
+  }
+  input::placeholder {
+    font-size: 16px;
+    color: #999;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  form p {
+    font-size: smaller;
+    color: var(--text-color);
+  }
+  a {
+    color: var(--main-color);
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+    display: inline-block;
+    margin: 0;
+  }
+
+  #google-button {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    width: 70%;
+    background-color: #f2f2f2;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    color: var(--main-color);
+    cursor: pointer;
+    outline: none;
+    padding: 0.625rem 1rem;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    line-height: 1.4rem;
+    border: var(--main-color) solid 2px;
+  }
+  
+  #google-button i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+  }
+  
+  #google-button span {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #google-button:hover {
+    background-color: var(--main-color);
+    color: #f2f2f2;
+  }
+  
+
+
+  
+  
+  
+  
+    
+  
+  
